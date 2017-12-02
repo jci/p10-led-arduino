@@ -16,12 +16,12 @@ from the original code
 
 /* from the DMD code */
 
-#define PIN_OE       9    // D9 active low Output Enable, setting this low lights all the LEDs in the selected rows. Can pwm it at very high frequency for brightness control.
-#define PIN_A         6    // D6
-#define PIN_B         7    // D7
-#define PIN_CLK       13   // D13_SCK  is SPI Clock if SPI is used
-#define PIN_SCLK      8    // D8
-#define PIN_R    11   // D11_MOSI is SPI Master Out if SPI is used
+#define PIN_OE       9   
+#define PIN_A         6  
+#define PIN_B         7  
+#define PIN_CLK       13 
+#define PIN_SCLK      8  
+#define PIN_R    11   
 #define PIN_OTHER_SPI_nCS 10
 
 
