@@ -1,3 +1,7 @@
+
+/*
+
+from the original code 
 #define PIN_OE    2  // white
 #define PIN_A     3  // red
 #define PIN_B     4  // orange
@@ -7,6 +11,20 @@
 #define PIN_R     7  // blue
 //      PIN_GND         black
 #define PIN_AUDIO A0
+*/
+
+
+/* from the DMD code */
+
+#define PIN_OE       9    // D9 active low Output Enable, setting this low lights all the LEDs in the selected rows. Can pwm it at very high frequency for brightness control.
+#define PIN_A         6    // D6
+#define PIN_B         7    // D7
+#define PIN_CLK       13   // D13_SCK  is SPI Clock if SPI is used
+#define PIN_SCLK      8    // D8
+#define PIN_R    11   // D11_MOSI is SPI Master Out if SPI is used
+#define PIN_OTHER_SPI_nCS 10
+
+
 
 #define DIMNESS   4
 #define LED       13
@@ -16,7 +34,7 @@
 
 #define SNAKE_HISTORY 32
 
-#define PANELS       11
+#define PANELS       1
 #define WIDTH        (PANEL_WIDTH*PANELS)
 #define HEIGHT       (PANEL_HEIGHT)
 #define ZOOM         2
